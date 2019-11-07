@@ -22,7 +22,10 @@
     "start:dev": "sirv public --single --dev"
   },
   "release": {
-    "branch": "release"
+    "branch": "release",
+    "plugins": ["@semantic-release/npm", {
+      "npmPublish": false
+    }]
   },
   "config": {
     "commitizen": {
